@@ -19,11 +19,11 @@
     <!-- Custom CSS -->
     <link href="./css/modern-business.css" rel="stylesheet">
 
-    <!-- Simple Sidebar CSS -->
-    <link href="./css/simple-sidebar.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Card CSS -->
+    <link href="./css/card.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -51,28 +51,28 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left">
+                	<li>
+                        <a href="index.html">Inicio</a>
+                    </li>
                     <li>
-                        <a href="fp-index.html">Inicio</a>
+                        <a href="cursos.html">Cursos</a>
                     </li>
                     <li class="active">
-                        <a href="fp-cursos.html">Cursos</a>
+                        <a href="perfil.html">Perfil</a>
                     </li>
                     <li>
-                        <a href="fp-perfil.html">Perfil</a>
+                        <a href="sobre.html">Sobre</a>
                     </li>
                     <li>
-                        <a href="fp-sobre.html">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="fp-ajuda.html">Ajuda</a>
+                        <a href="ajuda.html">Ajuda</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="fp-entrar.html">Entrar</a>
+                        <a href="entrar.html">Maria</a>
                     </li>
                     <li>
-                        <a href="fp-registar.html">Registar</a>
+                        <a href="registar.html">Sair</a>
                     </li>
                 </ul>
                 <div class="col-sm-3 col-md-3 pull-right">
@@ -92,62 +92,73 @@
     </nav>
     <!-- END Navigation Menu -->
 
-    <div id="wrapper">
+    <!-- Page Content -->
+    <div class="container">
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="fp-cursos.html">
-                        Todos
-                    </a>
-                </li>
-                <li>
-                    <a href="fp-cursos-culinaria.html">Culin&aacute;ria</a>
-                </li>
-                <li>
-                    <a href="fp-cursos-financas.html">Finan&ccedil;as</a>
-                </li>
-                <li>
-                    <a href="fp-cursos-linguas.html">L&iacute;nguas</a>
-                </li>
-                <li>
-                    <a href="fp-cursos-saude.html">Sa&uacute;de</a>
-                </li>
-                <li>
-                    <a href="fp-cursos-tecnologia.html">Tecnologia</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
+        <div class="row row-offcanvas row-offcanvas-right">
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-10">
-                    <!-- Page Header -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Culin&aacute;ria
-                    </h1>
+            <div class="col-lg-12 col-sm-12">
+                <div class="card hovercard">
+                    <div class="card-background">
+                        <img class="card-bkimg" alt="" src="./img/professor_manuel_ferreira.png">
+                        <!-- http://lorempixel.com/850/280/people/9/ -->
+                    </div>
+                    <div class="useravatar">
+                        <img alt="" src="./img/professor_manuel_ferreira.png">
+                    </div>
+                    <div class="card-info"> <span class="card-title">Professor Manuel Ferreira</span>
+
+                    </div>
                 </div>
-            </div>
-            <!-- /.row -->
-
-            <div class="col-md-4 portfolio-item">
-                <a href="fp-curso-exemplo.html">
-                    <img class="img-responsive" src="./img/course8.png" alt="">
-                </a>
-                <h3>
-                    <a href="fp-curso-exemplo.html">Curso de Bolos</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-
-            </div>
+                <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
+                    <div class="btn-group" role="group">
+                        <button type="button" id="stars" class="btn btn-primary" href="#tab1" data-toggle="tab"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                            <div class="hidden-xs">Cursos Lecionados</div>
+                        </button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab"><span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+                            <div class="hidden-xs">Curriculo</div>
+                        </button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" id="following" class="btn btn-default" href="#tab3" data-toggle="tab"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                            <div class="hidden-xs">Perfil</div>
+                        </button>
+                    </div>
                 </div>
-            </div>
+
+                    <div class="well">
+                      <div class="tab-content" style="height: 450px">
+                        <div class="tab-pane fade in active" id="tab1">
+                          <div class="col-md-4 portfolio-item">
+                            <a href="curso-exemplo.html">
+                                <img class="img-responsive" src="./img/course3.png" alt="">
+                            </a>
+                            <h3>
+                                <a href="curso-exemplo.html">Curso de An&aacute;lise de Mercados</a>
+                            </h3>
+                          </div>
+                        </div
+                        </div>
+                        <div class="tab-pane fade in" id="tab2">
+                          <h3>TAB 2</h3>
+                        </div>
+                        <div class="tab-pane fade in" id="tab3">
+                          <h3>TAB 3</h3>
+                        </div>
+                      </div>
+                    </div>
+
+                    <textarea class="form-control" rows="3"></textarea>
+                    <br/>
+                    <input type="submit" name="submit" id="submit" value="Enviar Mensagem" class="btn btn-info pull-right">
+                
+                </div>
+            
+    
+
+        </div><!--/row-->
 
         <hr>
 
@@ -159,11 +170,9 @@
                 </div>
             </div>
         </footer>
-        </div>
-        <!-- /#page-content-wrapper -->
 
     </div>
-    <!-- /#wrapper -->
+    <!-- /.container -->
 
     <!-- jQuery -->
     <script src="./js/jquery.js"></script>
@@ -171,6 +180,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="./js/bootstrap.min.js"></script>
+
+    <!-- Card JS -->
+    <script src="./js/card.js"></script>
 
     <!-- Script to Activate the Carousel -->
     <script>

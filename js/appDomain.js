@@ -61,8 +61,8 @@
 *****************************************************************************************/
 
 function loadAll() {
-	$("#register").load("fp-registar.html");
-	$("#login").load("fp-entrar.html");
+	$("#register").load("registar.html");
+	$("#login").load("entrar.html");
 	updateNavbar();
 }
 
@@ -282,13 +282,13 @@ function updateNavbar() {
 	var leftLink = document.getElementById("navbarButtonLeft");
 	var rightLink = document.getElementById("navbarButtonRight");
 	if (userLoggedIn()) {
-		leftLink.setAttribute("href", "fp-perfil.html");
+		leftLink.setAttribute("href", "perfil.html");
 		leftLink.removeAttribute("data-toggle");
 		leftLink.removeAttribute("data-target");
 		leftLink.innerHTML = "Olá, "+ getCurrentUser().getAttribute("first_name");  
 
 //NOT WORKING
-rightLink.setAttribute("href", "fp-index.html");
+rightLink.setAttribute("href", "index.html");
 rightLink.setAttribute("data-toggle","");
 rightLink.setAttribute("data-target","");
 rightLink.setAttribute("onclick", "logoutUser()");
@@ -397,11 +397,11 @@ function loadCoursesThumbnails(categoryDiv, courseId) {
 	var course = getCourseById(courseId);
 	courseThumbnail.innerHTML ="\
 	         <div class='col-md-4 portfolio-item' >\
-                <a href='fp-curso-exemplo.html'>\
+                <a href='curso-exemplo.html'>\
                     <img class='img-responsive' src='./img/course8.png' alt=''/>\
                 </a>\
                 <h3>\
-                    <a href='fp-curso-exemplo.html'>"+course.getAttribute("title")+"</a>\
+                    <a href='curso-exemplo.html'>"+course.getAttribute("title")+"</a>\
                 </h3>\
                 <p>"+course.getAttribute("description")+"</p>\
             </div>";

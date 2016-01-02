@@ -19,6 +19,9 @@
     <!-- Custom CSS -->
     <link href="./css/modern-business.css" rel="stylesheet">
 
+    <!-- Simple Sidebar CSS -->
+    <link href="./css/simple-sidebar.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -48,28 +51,28 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left">
-                	<li>
-                        <a href="fp-index.html">Inicio</a>
-                    </li>
                     <li>
-                        <a href="fp-cursos.html">Cursos</a>
-                    </li>
-                    <li>
-                        <a href="fp-perfil.html">Perfil</a>
-                    </li>
-                    <li>
-                        <a href="fp-sobre.html">Sobre</a>
+                        <a href="index.html">Inicio</a>
                     </li>
                     <li class="active">
-                        <a href="fp-ajuda.html">Ajuda</a>
+                        <a href="cursos.html">Cursos</a>
+                    </li>
+                    <li>
+                        <a href="perfil.html">Perfil</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="ajuda.html">Ajuda</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="fp-entrar.html">Entrar</a>
+                        <a href="entrar.html">Entrar</a>
                     </li>
                     <li>
-                        <a href="fp-registar.html">Registar</a>
+                        <a href="registar.html">Registar</a>
                     </li>
                 </ul>
                 <div class="col-sm-3 col-md-3 pull-right">
@@ -89,13 +92,81 @@
     </nav>
     <!-- END Navigation Menu -->
 
-    <!-- Page Content -->
-    <div class="container">
+    <div id="wrapper">
 
-        <div class="row row-offcanvas row-offcanvas-right">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="cursos.html">
+                        Todos
+                    </a>
+                </li>
+                <li>
+                    <a href="cursos-culinaria.html">Culin&aacute;ria</a>
+                </li>
+                <li>
+                    <a href="cursos-financas.html">Finan&ccedil;as</a>
+                </li>
+                <li>
+                    <a href="cursos-linguas.html">L&iacute;nguas</a>
+                </li>
+                <li>
+                    <a href="cursos-saude.html">Sa&uacute;de</a>
+                </li>
+                <li>
+                    <a href="cursos-tecnologia.html">Tecnologia</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-10">
+
+            <!-- Projects Row -->
+            <div class="row">
+                
+            </div>
+            <!-- /.row -->
+
+            <!-- Page Header -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">L&iacute;nguas
+                    </h1>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <div class="col-md-4 portfolio-item">
+                <a href="curso-exemplo.html">
+                    <img class="img-responsive" src="./img/course6.png" alt="">
+                </a>
+                <h3>
+                    <a href="#">Curso de Franc&ecirc;s</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+
+            <div class="col-md-4 portfolio-item">
+                <a href="curso-exemplo.html">
+                    <img class="img-responsive" src="./img/course5.png" alt="">
+                </a>
+                <h3>
+                    <a href="curso-exemplo.html">Curso de Italiano</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
 
 
-        </div><!--/row-->
+
+            </div>
+                </div>
+            </div>
 
         <hr>
 
@@ -107,9 +178,11 @@
                 </div>
             </div>
         </footer>
+        </div>
+        <!-- /#page-content-wrapper -->
 
     </div>
-    <!-- /.container -->
+    <!-- /#wrapper -->
 
     <!-- jQuery -->
     <script src="./js/jquery.js"></script>
