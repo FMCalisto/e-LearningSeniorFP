@@ -1,6 +1,6 @@
 # Senior e-Learning Platform Project (SEPP)
 
-## Final Prototype Project Due
+## Final Prototype Project
 
 [![Latest Stable Version](https://poser.pugx.org/e-LearningSenior/e-LearningSenior/version)](https://packagist.org/packages/e-LearningSenior/e-LearningSenior) [![Latest Unstable Version](https://poser.pugx.org/e-LearningSenior/e-LearningSenior/v/unstable)](//packagist.org/packages/e-LearningSenior/e-LearningSenior) [![Total Downloads](https://poser.pugx.org/e-LearningSenior/e-LearningSenior/downloads)](https://packagist.org/packages/e-LearningSenior/e-LearningSenior)
 
