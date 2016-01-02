@@ -1,0 +1,93 @@
+<html>
+<head>
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+  <script src="./js/jquery.js" type="text/javascript"></script>
+  <script src="./js/appDomain.js" type="text/javascript"></script>
+  <script type="text/javascript"> 
+  $(function(){
+    $("#header").load("fp-header.html"); 
+    $("#footer").load("fp-footer.html");
+  });
+
+  </script>
+</head>
+<body>
+  <div id="header"></div>
+
+
+<!-- Page Content -->
+<div class="container">
+
+<div class="col-md-9">
+      <form role="form">
+
+        <div class="row">
+          <div class="col-md-7">
+            <div class="form-group">
+              <label for="InputCourseTitle">Título *</label>
+              <input type="text" class="form-control" id="InputCourseTitle" name="InputCourseTitle" placeholder="Nome do curso" required="true"/>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="form-group">
+              <label for="categoryPicker">Categoria *</label>
+
+              <div class="btn-group btn-block">
+                <button id="categoryPicker" class="col-sm-12 col-md-12 btn btn-md btn-default" style="text-align:left; padding-left:6px" data-toggle="dropdown" onclick="
+                loadCategoriesIntoDropdown()">Escolha uma categoria
+
+
+                <span class="caret"></span>
+              </button>
+
+              <ul id="dropDownCategories" class="dropdown-menu btn-block">
+              </ul>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label for="LoginInputPassword">Descrição *</label>
+        <textarea class="form-control counted" name="message" id="InputCourseDescription" name="InputCourseDescription" placeholder="Escreva uma breve descrição sobre o curso..." rows="3"></textarea>
+      </div>
+
+
+
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+           <button type="button" name="cancelCreateCourse" id="cancelCreateCourse" class="btn btn-info btn-block btn-lg">Cancelar</button>
+         </div>
+       </div>
+       <div class="col-md-6">
+        <div class="form-group">
+          <input type="submit" name="submitCreateCourse" id="submitCreateCourse" class="btn btn-info btn-block btn-lg" value="Criar curso" onclick="createCourse()"></button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+
+</div>
+
+<hr>
+
+<div id="footer"/>
+</div>
+
+</div>
+</body>
+</html>

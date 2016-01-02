@@ -1,0 +1,11 @@
+/*.primary-color { background-color: #303030; }*/
+
+.primary-color { background-color: #bf5039; }
+
+.secondary-color { background-color: #109c7d; }
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  background-color: #bf5039;
+  color: #000000;
+}

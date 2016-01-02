@@ -1,0 +1,70 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+        
+        <script src="./js/jquery.js"></script>
+        <script> 
+            $(function(){
+              $("#header").load("fp-header.html"); 
+              $("#footer").load("fp-footer.html");
+            });
+        </script>
+      <script src="./js/appDomain.js"></script>
+    </head>
+    <body>
+        <div id="header"></div>
+
+    <!-- Page Content -->
+    <div class="container">
+
+  <div class="row">
+
+    <!-- BEGIN CARD-->
+    <div class="col-md-3">
+
+            <div class="card hovercard" style="text-align:left;">
+                <div class="cardheader">
+
+                </div>
+                <div class="avatar">
+                </div>
+                <div class="info">
+                    <div class="title" style="color:#ffffff">Categorias</div>
+                </div>
+                                 <nav class="nav-sidebar">
+                <ul id="categories" class="nav">
+                <li class="active" onclick="setActiveCategory(this.id)" id="Todos">
+                    <a>Todos</a>
+                </li>
+                </ul>
+            </nav>
+
+            </div>
+        </div>
+
+<!-- BEGIN COURSES -->
+
+       
+
+<div id="courses" class="col-md-9">
+
+
+        <!-- courses are generated here -->
+
+            </div>
+                </div>
+
+        <hr>
+
+
+        <hr>
+
+<script> loadCategories(); </script>
+        <div id="footer"/></div>
+    </body>
+</html>
