@@ -123,9 +123,7 @@ function load() {
 
 function store(xmlDoc) {
 	var xmlString = xmlToString(xmlDoc);
-	localStorage.setItem("eSeniorDatabase", xmlString);	
-
-	alert(xmlString);
+	localStorage.setItem("eSeniorDatabase", xmlString);
 }
 
 function reset() {
